@@ -86,7 +86,11 @@ export const skills = [
   { group: "Data", items: ["PostgreSQL", "SQL Server", "MySQL", "MongoDB", "Prisma", "TypeORM", "Drizzle", "Sequelize"] },
   { group: "Distributed systems", items: ["Redis", "BullMQ", "RabbitMQ", "Kafka", "Event-driven design"] },
   { group: "DevOps & testing", items: ["Docker", "GitHub Actions", "CI/CD", "Jest", "Supertest", "Testcontainers", "E2E testing"] },
+  { group: "Deployment", items: ["AWS", "Azure", "Docker", "Kubernetes", "Grafana", "Loki"] },
   { group: "Web3", items: ["Celo", "Solidity", "Wagmi", "Mento Protocol"] },
 ];
 
-export const education = { degree: "Bachelor in Pharmacy (B. Pharm)", period: "2013 — 2019" };
+export const education = [
+  { degree: "MSc Public Health" },
+  { degree: "Bachelor in Pharmacy (B. Pharm)", period: "2013 — 2019" },
+];

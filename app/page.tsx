@@ -5,7 +5,6 @@ import { Footer } from "@/components/Footer";
 import { Hero } from "@/components/Hero";
 import { Nav } from "@/components/Nav";
 import { Projects } from "@/components/Projects";
-import { Writing } from "@/components/Writing";
 
 export default function HomePage() {
   return (
@@ -16,7 +15,6 @@ export default function HomePage() {
         <Featured />
         <Experience />
         <Projects />
-        <Writing />
         <Contact />
       </main>
       <Footer />

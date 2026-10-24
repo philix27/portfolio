@@ -16,7 +16,7 @@ export function Hero() {
       <div aria-hidden className="pointer-events-none absolute inset-0 bg-[linear-gradient(to_right,rgba(255,255,255,0.03)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.03)_1px,transparent_1px)] bg-[size:56px_56px] [mask-image:radial-gradient(60%_50%_at_50%_0%,black,transparent)]" />
       <div className="relative mx-auto w-full max-w-5xl px-5 md:px-8">
         <div className="animate-rise flex items-center gap-3">
-          <Image src="/profile.jpg" alt="Felix Eligbue" width={44} height={44} priority className="size-11 rounded-full border border-line object-cover" />
+          <Image src="/profile2.png" alt="Felix Eligbue" width={44} height={44} priority className="size-11 rounded-full border border-line object-cover" />
           <span className="inline-flex items-center gap-2 rounded-full border border-line bg-white/[0.03] px-3 py-1 text-xs text-sub">
             <span className="size-1.5 animate-pulse-dot rounded-full bg-emerald-400" />
             Open to backend roles

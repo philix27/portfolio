@@ -62,8 +62,14 @@ export function Experience() {
         <Reveal delay={300}>
           <div className="h-full rounded-xl border border-line bg-surface p-5">
             <h3 className="mb-3 text-sm font-medium text-ink">Education</h3>
-            <p className="text-sm text-sub">{education.degree}</p>
-            <p className="font-mono text-xs text-mute">{education.period}</p>
+            <ul className="space-y-3">
+              {education.map((e) => (
+                <li key={e.degree}>
+                  <p className="text-sm text-sub">{e.degree}</p>
+                  {"period" in e && <p className="font-mono text-xs text-mute">{e.period}</p>}
+                </li>
+              ))}
+            </ul>
           </div>
         </Reveal>
       </div>

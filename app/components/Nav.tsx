@@ -8,7 +8,6 @@ const links = [
   { label: "Synchro9ice", href: "/#synchro9ice" },
   { label: "Experience", href: "/#experience" },
   { label: "Projects", href: "/#projects" },
-  { label: "Writing", href: "/#writing" },
 ];
 
 export function Nav() {
