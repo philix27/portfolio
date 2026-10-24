@@ -94,3 +94,5 @@ export const education = [
   { degree: "MSc Public Health" },
   { degree: "Bachelor in Pharmacy (B. Pharm)", period: "2013 — 2019" },
 ];
+
+export const interests = ["Core banking applications and how they work", "Fineract", "SeaBaas"];

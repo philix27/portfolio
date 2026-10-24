@@ -7,6 +7,7 @@ import { site } from "@/data/site";
 const links = [
   { label: "Synchro9ice", href: "/#synchro9ice" },
   { label: "Experience", href: "/#experience" },
+  { label: "Interests", href: "/#interests" },
   { label: "Projects", href: "/#projects" },
 ];
 
