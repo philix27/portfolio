@@ -1,19 +1,13 @@
-'use client';
-
-import Link from 'next/link';
-
-import { AppButton, TextP, TextH } from './comps';
+import Link from "next/link";
 
 export default function NotFound() {
   return (
-    <div className={'w-full flex items-center justify-center h-screen'}>
-      <div className="flex flex-col items-center">
-        <TextH className="mb-4">Not Found</TextH>
-        <TextP className="mb-4"> Could not find requested resource</TextP>
-        <Link href="/">
-          <AppButton>Return Home</AppButton>
-        </Link>
+    <main className="grid min-h-screen place-items-center px-5 text-center">
+      <div>
+        <p className="font-mono text-sm text-brand-soft">404</p>
+        <h1 className="mt-2 text-3xl font-semibold text-ink">Page not found</h1>
+        <Link href="/" className="mt-6 inline-block text-sm text-mute hover:text-ink">← Back home</Link>
       </div>
-    </div>
+    </main>
   );
 }

@@ -3,80 +3,20 @@
 @tailwind utilities;
 
 @layer base {
-  :root {
-    --background: #e5e7eb;
-    --foreground: #535353;
-
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
-
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 47.4% 11.2%;
-
-    --card: #ffffff;
-    --card-foreground: #0e151d;
-
-    --primary: #f24500;
-    /* --primary: #f24500; */
-    --primary-foreground: #fff;
-
-    --secondary: #ffffff;
-    --secondary-foreground: #19232f;
-
-    --accent: #ff4c0578;
-    --accent-foreground: #f8f8f8;
-
-    --destructive: #d00000;
-    --destructive-foreground: #ffffff;
-
-    --ring: #4c4847;
-    --border: #4c4847;
-    --input: #4c4847;
-
-    --radius: 0.5rem;
-  }
-
-  .dark {
-    --background: #111827;
-    --foreground: #e3e6e6;
-
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
-
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 47.4% 11.2%;
-
-    --card: #151e27;
-    --card-foreground: #ffff;
-
-    --primary: #ff500b;
-    --primary-foreground: #fff;
-
-    --secondary: #121b24;
-    --secondary-foreground: #f8f8f8;
-
-    --accent: #243140;
-    --accent-foreground: #f8f8f8;
-
-    --destructive: #d00000;
-    --destructive-foreground: #ffffff;
-
-    --ring: #3a4d5f;
-    --border: #3a4d5f;
-    --input: #3a4d5f;
-
-    --radius: 0.5rem;
-  }
-}
-
-@layer base {
-  * {
-    @apply border-border;
+  html {
+    scroll-behavior: smooth;
+    color-scheme: dark;
   }
   body {
-    @apply bg-background text-foreground;
-    font-feature-settings:
-      'rlig' 1,
-      'calt' 1;
+    @apply bg-bg text-sub antialiased;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+  ::selection {
+    @apply bg-brand/40 text-ink;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
   }
 }

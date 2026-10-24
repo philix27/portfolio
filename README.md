@@ -1,5 +1,13 @@
-# Daily Actions | Developers Diary
+# Felix Eligbue — portfolio
 
-## Personal Journal
-### To document my daily personnal tech development.
-Visit my portfolio [philix.tech](https://philix.dev/)
+Next.js 14 (App Router) + Tailwind CSS. Dark, Linear-inspired single-page portfolio with a small markdown blog.
+
+- `app/data/` — résumé, projects and featured-product content
+- `app/components/` — page sections
+- `content/blogs/*.md` — posts (frontmatter: `title`, `subtitle`, `date`)
+- `public/Felix-Eligbue-Resume.pdf` — résumé download
+
+```bash
+yarn dev   # http://localhost:3009
+yarn build
+```
